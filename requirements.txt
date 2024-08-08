@@ -1,0 +1,18 @@
+scikit-learn
+matplotlib
+tqdm
+PyYAML
+datasets
+py7zr
+notebook
+numpy
+pandas
+pickle4
+streamlit
+streamlit-option-menu
+python-box==6.0.2
+ensure==1.0.2
+fastapi==0.78.0
+uvicorn==0.18.3
+Jinja2==3.1.2
+-e .
