@@ -1,0 +1,12 @@
+heart_disease:
+  max_iter: 100
+
+parkinsons:
+  kernel: "linear"
+
+diabetes:
+  kernel: "linear"
+
+model_evaluation:
+  metrics:
+    accuracy_threshold: 0.70

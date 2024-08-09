@@ -1,0 +1,168 @@
+Heart Disease Train Data has no missing values.
+Heart Disease Train Data data types:
+age           int64
+sex           int64
+cp            int64
+trestbps      int64
+chol          int64
+fbs           int64
+restecg       int64
+thalach       int64
+exang         int64
+oldpeak     float64
+slope         int64
+ca            int64
+thal          int64
+target        int64
+dtype: object
+Heart Disease Validation Data has no missing values.
+Heart Disease Validation Data data types:
+age           int64
+sex           int64
+cp            int64
+trestbps      int64
+chol          int64
+fbs           int64
+restecg       int64
+thalach       int64
+exang         int64
+oldpeak     float64
+slope         int64
+ca            int64
+thal          int64
+target        int64
+dtype: object
+Heart Disease Test Data has no missing values.
+Heart Disease Test Data data types:
+age           int64
+sex           int64
+cp            int64
+trestbps      int64
+chol          int64
+fbs           int64
+restecg       int64
+thalach       int64
+exang         int64
+oldpeak     float64
+slope         int64
+ca            int64
+thal          int64
+target        int64
+dtype: object
+Parkinson's Train Data has no missing values.
+Parkinson's Train Data data types:
+name                 object
+MDVP:Fo(Hz)         float64
+MDVP:Fhi(Hz)        float64
+MDVP:Flo(Hz)        float64
+MDVP:Jitter(%)      float64
+MDVP:Jitter(Abs)    float64
+MDVP:RAP            float64
+MDVP:PPQ            float64
+Jitter:DDP          float64
+MDVP:Shimmer        float64
+MDVP:Shimmer(dB)    float64
+Shimmer:APQ3        float64
+Shimmer:APQ5        float64
+MDVP:APQ            float64
+Shimmer:DDA         float64
+NHR                 float64
+HNR                 float64
+status                int64
+RPDE                float64
+DFA                 float64
+spread1             float64
+spread2             float64
+D2                  float64
+PPE                 float64
+dtype: object
+Parkinson's Validation Data has no missing values.
+Parkinson's Validation Data data types:
+name                 object
+MDVP:Fo(Hz)         float64
+MDVP:Fhi(Hz)        float64
+MDVP:Flo(Hz)        float64
+MDVP:Jitter(%)      float64
+MDVP:Jitter(Abs)    float64
+MDVP:RAP            float64
+MDVP:PPQ            float64
+Jitter:DDP          float64
+MDVP:Shimmer        float64
+MDVP:Shimmer(dB)    float64
+Shimmer:APQ3        float64
+Shimmer:APQ5        float64
+MDVP:APQ            float64
+Shimmer:DDA         float64
+NHR                 float64
+HNR                 float64
+status                int64
+RPDE                float64
+DFA                 float64
+spread1             float64
+spread2             float64
+D2                  float64
+PPE                 float64
+dtype: object
+Parkinson's Test Data has no missing values.
+Parkinson's Test Data data types:
+name                 object
+MDVP:Fo(Hz)         float64
+MDVP:Fhi(Hz)        float64
+MDVP:Flo(Hz)        float64
+MDVP:Jitter(%)      float64
+MDVP:Jitter(Abs)    float64
+MDVP:RAP            float64
+MDVP:PPQ            float64
+Jitter:DDP          float64
+MDVP:Shimmer        float64
+MDVP:Shimmer(dB)    float64
+Shimmer:APQ3        float64
+Shimmer:APQ5        float64
+MDVP:APQ            float64
+Shimmer:DDA         float64
+NHR                 float64
+HNR                 float64
+status                int64
+RPDE                float64
+DFA                 float64
+spread1             float64
+spread2             float64
+D2                  float64
+PPE                 float64
+dtype: object
+Diabetes Train Data has no missing values.
+Diabetes Train Data data types:
+Pregnancies                   int64
+Glucose                       int64
+BloodPressure                 int64
+SkinThickness                 int64
+Insulin                       int64
+BMI                         float64
+DiabetesPedigreeFunction    float64
+Age                           int64
+Outcome                       int64
+dtype: object
+Diabetes Validation Data has no missing values.
+Diabetes Validation Data data types:
+Pregnancies                   int64
+Glucose                       int64
+BloodPressure                 int64
+SkinThickness                 int64
+Insulin                       int64
+BMI                         float64
+DiabetesPedigreeFunction    float64
+Age                           int64
+Outcome                       int64
+dtype: object
+Diabetes Test Data has no missing values.
+Diabetes Test Data data types:
+Pregnancies                   int64
+Glucose                       int64
+BloodPressure                 int64
+SkinThickness                 int64
+Insulin                       int64
+BMI                         float64
+DiabetesPedigreeFunction    float64
+Age                           int64
+Outcome                       int64
+dtype: object

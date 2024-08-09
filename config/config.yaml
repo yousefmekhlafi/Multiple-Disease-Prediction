@@ -1,85 +1,66 @@
 artifacts_root: artifacts
 
-
 data_ingestion:
   heart_disease:
-    root_dir: artifacts/data_ingestion/heart_disease
+    root_dir: data_ingestion/heart_disease
     source_URL: https://github.com/yousefmekhlafi/Multiple-Disease-Prediction/raw/main/heart_data.zip
-    local_data_file: artifacts/data_ingestion/heart_disease_data.zip
-    unzip_dir: artifacts/data_ingestion/heart_disease
+    local_data_file: data_ingestion/heart_disease_data.zip
+    unzip_dir: data_ingestion/heart_disease
   parkinsons:
-    root_dir: artifacts/data_ingestion/parkinsons
+    root_dir: data_ingestion/parkinsons
     source_URL: https://github.com/yousefmekhlafi/Multiple-Disease-Prediction/raw/main/parkinsons_data.zip
-    local_data_file: artifacts/data_ingestion/parkinsons_data.zip
-    unzip_dir: artifacts/data_ingestion/parkinsons
+    local_data_file: data_ingestion/parkinsons_data.zip
+    unzip_dir: data_ingestion/parkinsons
   diabetes:
-    root_dir: artifacts/data_ingestion/diabetes
+    root_dir: data_ingestion/diabetes
     source_URL: https://github.com/yousefmekhlafi/Multiple-Disease-Prediction/raw/main/diabetes_data.zip
-    local_data_file: artifacts/data_ingestion/diabetes_data.zip
-    unzip_dir: artifacts/data_ingestion/diabetes
+    local_data_file: data_ingestion/diabetes_data.zip
+    unzip_dir: data_ingestion/diabetes
 
-# Data Validation Configuration
 data_validation:
   heart_disease:
-    root_dir: artifacts/data_validation/heart_disease
-    STATUS_FILE: artifacts/data_validation/heart_disease/status.txt
-    ALL_REQUIRED_FILES: ["heart_train_data", "heart_test_data", "heart_valid_data"]
+    train_data_file: data_ingestion/heart_disease/heart_train_data.csv
+    valid_data_file: data_ingestion/heart_disease/heart_valid_data.csv
+    test_data_file: data_ingestion/heart_disease/heart_test_data.csv
   parkinsons:
-    root_dir: artifacts/data_validation/parkinsons
-    STATUS_FILE: artifacts/data_validation/parkinsons/status.txt
-    ALL_REQUIRED_FILES: ["parkinsons_train_data", "parkinsons_test_data", "parkinsons_valid_data"]
+    train_data_file: data_ingestion/parkinsons/parkinsons_train_data.csv
+    valid_data_file: data_ingestion/parkinsons/parkinsons_valid_data.csv
+    test_data_file: data_ingestion/parkinsons/parkinsons_test_data.csv
   diabetes:
-    root_dir: artifacts/data_validation/diabetes
-    STATUS_FILE: artifacts/data_validation/diabetes/status.txt
-    ALL_REQUIRED_FILES: ["diab_train_data", "diab_test_data", "diab_valid_data"]
+    train_data_file: data_ingestion/diabetes/diab_train_data.csv
+    valid_data_file: data_ingestion/diabetes/diab_valid_data.csv
+    test_data_file: data_ingestion/diabetes/diab_test_data.csv
 
-# Data Transformation Configuration
-data_transformation:
+model_training:
   heart_disease:
-    root_dir: artifacts/data_transformation/heart_disease
-    data_path: artifacts/data_ingestion/heart_disease
-    tokenizer_name: google/pegasus-cnn_dailymail
+    model_type: LogisticRegression
+    params:
+      C: 1.0
+      solver: lbfgs
+    scaler: StandardScaler
   parkinsons:
-    root_dir: artifacts/data_transformation/parkinsons
-    data_path: artifacts/data_ingestion/parkinsons
-    tokenizer_name: google/pegasus-cnn_dailymail
+    model_type: SVC
+    params:
+      kernel: linear
+      C: 1.0
+    scaler: StandardScaler
   diabetes:
-    root_dir: artifacts/data_transformation/diabetes
-    data_path: artifacts/data_ingestion/diabetes
-    tokenizer_name: google/pegasus-cnn_dailymail
+    model_type: SVC
+    params:
+      kernel: linear
+      C: 1.0
+    scaler: StandardScaler
 
-# Model Trainer Configuration
-model_trainer:
-  heart_disease:
-    root_dir: artifacts/model_trainer/heart_disease
-    data_path: artifacts/data_transformation/heart_disease
-    model_ckpt: google/pegasus-cnn_dailymail
-  parkinsons:
-    root_dir: artifacts/model_trainer/parkinsons
-    data_path: artifacts/data_transformation/parkinsons
-    model_ckpt: google/pegasus-cnn_dailymail
-  diabetes:
-    root_dir: artifacts/model_trainer/diabetes
-    data_path: artifacts/data_transformation/diabetes
-    model_ckpt: google/pegasus-cnn_dailymail
-
-# Model Evaluation Configuration
 model_evaluation:
-  heart_disease:
-    root_dir: artifacts/model_evaluation/heart_disease
-    data_path: artifacts/data_transformation/heart_disease
-    model_path: artifacts/model_trainer/heart_disease/model
-    tokenizer_path: artifacts/model_trainer/heart_disease/tokenizer
-    metric_file_name: artifacts/model_evaluation/heart_disease/metrics.csv
-  parkinsons:
-    root_dir: artifacts/model_evaluation/parkinsons
-    data_path: artifacts/data_transformation/parkinsons
-    model_path: artifacts/model_trainer/parkinsons/model
-    tokenizer_path: artifacts/model_trainer/parkinsons/tokenizer
-    metric_file_name: artifacts/model_evaluation/parkinsons/metrics.csv
-  diabetes:
-    root_dir: artifacts/model_evaluation/diabetes
-    data_path: artifacts/data_transformation/diabetes
-    model_path: artifacts/model_trainer/diabetes/model
-    tokenizer_path: artifacts/model_trainer/diabetes/tokenizer
-    metric_file_name: artifacts/model_evaluation/diabetes/metrics.csv
+  findings_file: artifacts/evaluation/findings.txt
+  models:
+    heart_disease:
+      model_path: artifacts/models/heart_disease_model.pkl
+    parkinsons:
+      model_path: artifacts/models/parkinsons_model.pkl
+    diabetes:
+      model_path: artifacts/models/diabetes_model.pkl
+  data_paths:
+    heart_disease: artifacts/data/heart_disease_test_data.csv
+    parkinsons: artifacts/data/parkinsons_test_data.csv
+    diabetes: artifacts/data/diabetes_test_data.csv
