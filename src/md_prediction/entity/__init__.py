@@ -37,6 +37,25 @@ class ModelTrainingConfig:
 
 @dataclass
 class ModelEvaluationConfig:
-    def __init__(self, models: Dict[str, str], findings_file: str):
-        self.models = models  # Make sure this is defined
+    def __init__(self, metrics_path, findings_file, models, data_paths):
+        self.metrics_path = metrics_path
         self.findings_file = findings_file
+        self.models = models
+        self.data_paths = data_paths
+        # Add metrics attributes
+        self.accuracy = None
+        self.precision = None
+        self.recall = None
+        self.f1_score = None
+
+    def to_dict(self):
+        return {
+            "metrics_path": self.metrics_path,
+            "findings_file": self.findings_file,
+            "models": self.models,
+            "data_paths": self.data_paths,
+            "accuracy": self.accuracy,
+            "precision": self.precision,
+            "recall": self.recall,
+            "f1_score": self.f1_score,
+        }

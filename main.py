@@ -20,9 +20,11 @@ def main():
     training_pipeline = ModelTrainingPipeline(config_path)
     training_pipeline.run()
 
-    # Running model evaluation pipeline
+    #Running evaluation pipeline
+
     evaluation_pipeline = ModelEvaluationPipeline(config_path)
     evaluation_pipeline.run()
+
     
 if __name__ == "__main__":
     main()

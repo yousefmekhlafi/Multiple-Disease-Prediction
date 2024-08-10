@@ -1,12 +1,24 @@
-heart_disease:
-  max_iter: 100
+model_training:
+  heart_disease:
+    model_type: "LogisticRegression"
+    params:
+      C: 1.0
+      max_iter: 100
+  parkinsons:
+    model_type: "SVC"
+    params:
+      C: 1.0
+      kernel: "linear"
+  diabetes:
+    model_type: "SVC"
+    params:
+      C: 1.0
+      kernel: "linear"
 
-parkinsons:
-  kernel: "linear"
-
-diabetes:
-  kernel: "linear"
-
-model_evaluation:
+evaluation:
   metrics:
-    accuracy_threshold: 0.70
+    accuracy: true
+    precision: true
+    recall: true
+    f1_score: true
+    save_format: "csv"

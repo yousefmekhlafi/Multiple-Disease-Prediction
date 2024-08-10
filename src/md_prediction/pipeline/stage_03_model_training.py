@@ -1,6 +1,7 @@
+# src/pipeline/model_training_pipeline.py
 import pandas as pd
-from md_prediction.components.model_training import ModelTrainer
 from md_prediction.config.configuration import ConfigManager
+from md_prediction.components.model_training import ModelTrainer
 
 class ModelTrainingPipeline:
     def __init__(self, config_path):

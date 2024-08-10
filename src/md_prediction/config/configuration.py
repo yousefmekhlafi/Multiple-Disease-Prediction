@@ -9,6 +9,7 @@ class ConfigManager:
         self.config = self.load_config()
         self.data_ingestion_config = self.get_data_ingestion_config()
         self.data_validation_config = self.get_data_validation_config()
+        self.model_evaluation_config = self.get_model_evaluation_config()
 
     def load_config(self):
         with open(self.config_path, "r") as f:
@@ -55,18 +56,11 @@ class ConfigManager:
         for model_name, model_config in self.config["model_training"].items()
     }
     
-    def get_model_evaluation_config(self) -> ModelEvaluationConfig:
-        artifacts_root = Path(self.config["artifacts_root"])
+    def get_model_evaluation_config(self):
+        artifacts_root = Path(self.config["artifacts_root"])  # Use the correct key
         return ModelEvaluationConfig(
-            findings_file=artifacts_root / Path(self.config["model_evaluation"]["findings_file"]),
-            models={
-                key: {
-                    "model_path": artifacts_root / Path(model_info["model_path"])
-                }
-                for key, model_info in self.config["model_evaluation"]["models"].items()
-            },
-            data_paths={
-                key: artifacts_root / Path(data_path)
-                for key, data_path in self.config["model_evaluation"]["data_paths"].items()
-            }
-        )
+        metrics_path=artifacts_root / Path(self.config["model_evaluation"]["metrics_file"]),
+        findings_file=artifacts_root / Path(self.config["model_evaluation"]["findings_file"]),
+        models=self.config["model_evaluation"]["models"],
+        data_paths=self.config["model_evaluation"]["data_paths"]
+    )

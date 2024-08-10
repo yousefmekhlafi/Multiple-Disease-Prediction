@@ -55,12 +55,13 @@ model_evaluation:
   findings_file: artifacts/evaluation/findings.txt
   models:
     heart_disease:
-      model_path: artifacts/models/heart_disease_model.pkl
+      model_path: artifacts/models/heart_disease.pkl
     parkinsons:
-      model_path: artifacts/models/parkinsons_model.pkl
+      model_path: artifacts/models/parkinsons.pkl
     diabetes:
-      model_path: artifacts/models/diabetes_model.pkl
+      model_path: artifacts/models/diabetes.pkl
   data_paths:
-    heart_disease: artifacts/data/heart_disease_test_data.csv
-    parkinsons: artifacts/data/parkinsons_test_data.csv
-    diabetes: artifacts/data/diabetes_test_data.csv
+    heart_disease: artifacts/data_ingestion/heart_disease/heart_test_data.csv
+    parkinsons: artifacts/data_ingestion/parkinsons/parkinsons_test_data.csv
+    diabetes: artifacts/data_ingestion/diabetes/diab_test_data.csv
+  metrics_file: artifacts/evaluation/evaluation_metrics.csv

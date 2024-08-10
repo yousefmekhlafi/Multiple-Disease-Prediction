@@ -3,7 +3,6 @@ from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from sklearn.metrics import accuracy_score
 import pickle
 import os
 
@@ -12,6 +11,9 @@ class ModelTrainer:
         self.config = config_manager.get_model_training_config()  # Get model configuration
 
     def train_model(self, X, y, model_name):
+        # Drop unnecessary 'name' column from the training data
+        X = X.drop(columns=['name'], errors='ignore')
+
         model_config = self.config[model_name]
         model_type = model_config.model_type
         params = model_config.params
