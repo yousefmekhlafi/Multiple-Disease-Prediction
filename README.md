@@ -16,7 +16,7 @@ Coded along Sidhardhan YT channel
 
 Scope of simple deployment Guided with Siddhardhan's YT channel: 
 
-1. Learn ML classification on different datasets with jupyter notebook experimented conducted separately
+1. Learn ML classification on different datasets with jupyter notebook experiments conducted separately
 2. Saved models are used to deploy said experiments in a Streamlit app locally
 
 
