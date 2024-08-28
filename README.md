@@ -54,19 +54,7 @@ CTRL + click LMB the link provided on terminal and run predictions
 2. Step 2: Create requirements.txt and setup.py
 3. Step 3: Create logging, exception handling and utils modules 
 4. Step 4: Conduct experiments in jupyter notebooks separately (already done)
-5. Step 5: Reminder for steps of updating the application's pipelines and components on files below:
+5. Step 5: For each step in pipeline; update: config.yaml, params.yaml, entity, configuration manager, components, pipelines, main, app
 6. Step 6: Run, test, and debug the app 
-
-
-
-1. Update config.yaml 
-2. params.yaml 
-3. Update entity 
-4. Update configuration manager in src config
-5. Update components 
-6. Update pipelines 
-7. Update main.py 
-8. Update app.py
-
 
 
