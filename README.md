@@ -22,8 +22,8 @@ Scope of simple deployment Guided with Siddhardhan's YT channel:
 Personal effort scope: 
 
 1. Leveraging ChatGPT to learn how to convert the jupyter notebook ML experiments and streamlit app into an end-to-end modular coding, pipeline-oriented application
-2. Get an idea of how multiple algorithms work in an end-to-end production grade workflow
-3. Reverse engineering the entire project's methods to develop other multiple-algorithm applications  
+2. Get an idea on how multiple algorithms work in an end-to-end production grade workflow
+3. Reverse engineer the entire project's methods to develop other multiple-algorithm applications in the future 
 4. Breaking experiments down to ingestion, validation, transformation (missing and is probably cause of the bug), model training and model evaluation pipelines
 5. Learning how to create a multiple algorithm prediction pipeline
 6. Learning how to create a streamlit application for all 3 algorithms that can be dockerized and deployed locally and on cloud services 
@@ -35,7 +35,7 @@ Personal effort scope:
 
 "git clone https://github.com/yousefmekhlafi/Multiple-Disease-Prediction"
 
-2. Create a virtual environment on vscode "ccancer" and activate it
+2. Create a virtual environment on vscode "multipledisease" and activate it
 
 "conda create -n multipledisease python=3.12.4 -y"
 "conda activate multipledisease"
