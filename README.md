@@ -4,7 +4,7 @@
  
  GUIDED: Yes  
 
-DISCLAIMERS:
+# DISCLAIMERS
 Coded along Sidhardhan YT channel 
 1. Diabetes link: https://www.youtube.com/watch?v=xUE7SjVx9bQ&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=4&pp=iAQB
 2. Heart Disease link: https://www.youtube.com/watch?v=qmqCYC-MBQo&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=5&pp=iAQB
