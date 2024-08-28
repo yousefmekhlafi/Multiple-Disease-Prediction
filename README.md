@@ -1,7 +1,8 @@
 # End-to-End Multiple Machine Learning Algorithm Application for Predicting 3 Diseases
 
-. PROJECT STATUS: Malfunctioning. app.py is being debugged, you can still check the code and run the pipeline from main.py 
-. GUIDED: Yes  
+ PROJECT STATUS: Malfunctioning. app.py is being debugged, you can still check the code and run the pipeline from main.py 
+ 
+ GUIDED: Yes  
 
 DISCLAIMERS:
 Coded along Sidhardhan YT channel 
