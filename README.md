@@ -1,15 +1,14 @@
 # End-to-End Multiple Machine Learning Algorithm Application for Predicting 3-Diseases
 
 PROJECT STATUS: Malfunctioning. app.py is being debugged, you can still check the code and run the pipeline from main.py 
-GUIDED: Yes 
-LIMITATIONS: 
+GUIDED: Yes  
 
 DISCLAIMERS:
 Coded along Sidhardhan YT channel 
-Diabetes link: https://www.youtube.com/watch?v=xUE7SjVx9bQ&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=4&pp=iAQB
-Heart Disease link: https://www.youtube.com/watch?v=qmqCYC-MBQo&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=5&pp=iAQB
-Parkinson's link: https://www.youtube.com/watch?v=HbyN_ey-JVc&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=6&pp=iAQB
-Streamlit deployment link: https://www.youtube.com/watch?v=8Q_QQVQ1HZA&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=1&pp=iAQB
+1. Diabetes link: https://www.youtube.com/watch?v=xUE7SjVx9bQ&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=4&pp=iAQB
+2. Heart Disease link: https://www.youtube.com/watch?v=qmqCYC-MBQo&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=5&pp=iAQB
+3. Parkinson's link: https://www.youtube.com/watch?v=HbyN_ey-JVc&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=6&pp=iAQB
+4. Streamlit deployment link: https://www.youtube.com/watch?v=8Q_QQVQ1HZA&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=1&pp=iAQB
 
 
 # Project Scopes: 
