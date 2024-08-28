@@ -11,7 +11,7 @@ Coded along Sidhardhan YT channel
 4. Streamlit deployment link: https://www.youtube.com/watch?v=8Q_QQVQ1HZA&list=PLfFghEzKVmjuhQwKhYXvdU94GSU-6Jcjr&index=1&pp=iAQB
 
 
-# Project Scopes: 
+# Project Scopes and Goals: 
 
 Scope of simple deployment Guided with Siddhardhan's YT channel: 
 
