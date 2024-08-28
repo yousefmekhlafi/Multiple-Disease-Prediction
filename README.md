@@ -49,7 +49,8 @@ Personal effort scope:
 
 CTRL + click LMB the link provided on terminal and run predictions  
 
-# Project workflow and steps
+
+# Project workflow
 
 1. Step 1: Create template for automated creation of directories and files
 2. Step 2: Create requirements.txt and setup.py
@@ -59,3 +60,14 @@ CTRL + click LMB the link provided on terminal and run predictions
 6. Step 6: Run, test, and debug the app 
 
 
+# Jupyter Notebook ML Experiment Methodology (Per ML algorithm)
+
+1. Import dependencies
+2. Load the data
+3. Check for missing values
+4. Perform simple EDA for checking feature types
+5. Transform data and encode when/if necessary
+6. Split the data into training and testing datasets
+7. Train the model
+8. Test the model on random samples
+9. Save the model
